@@ -15,5 +15,23 @@
   "bugs": {
     "url": "https://github.com/foursuns/herosAPI/issues"
   },
-  "homepage": "https://github.com/foursuns/herosAPI#readme"
+  "homepage": "https://github.com/foursuns/herosAPI#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "boom": "^7.3.0",
+    "hapi": "^18.1.0",
+    "hapi-auth-jwt2": "^10.2.0",
+    "hapi-swagger": "^14.5.5",
+    "inert": "^5.1.3",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.4",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.21.4",
+    "vision": "^5.4.4"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
 }
