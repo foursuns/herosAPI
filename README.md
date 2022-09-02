@@ -4,15 +4,16 @@
 
 - bcrypt
 - boom
-- hapi
-- hapi-auth-jwt2
+- dotenv
+- @hapi/hapi
+- @hapi/jwt
+- @hapi/vision
+- @hapi/inert
 - hapi-swagger
-- inert
 - joi
 - jsonwebtoken
 - mongoose
 - pg
 - pg-hstore
 - sequelize
-- vision
 
