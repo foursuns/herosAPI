@@ -1,0 +1,19 @@
+{
+  "name": "herosapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foursuns/herosAPI.git"
+  },
+  "author": "Marcio Anthony",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foursuns/herosAPI/issues"
+  },
+  "homepage": "https://github.com/foursuns/herosAPI#readme"
+}
