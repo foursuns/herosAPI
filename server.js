@@ -28,6 +28,10 @@ const PORT = process.env.PORT;
 const HOST = process.env.HOST;
 const KEY  = process.env.KEY_JWT;
 
+function mapRoutes(instance, methods) {
+  return methods.map(method => instance[method]());
+}
+
 const init = async () => {
   const server = new Hapi.Server({
     port: PORT,
@@ -63,6 +67,11 @@ const init = async () => {
   });
 
   server.auth.default('jwt_strategy');
+
+  server.route([
+    ...mapRoutes(new HeroRoutes(mongoDb), HeroRoutes.methods()),
+    ...mapRoutes(new AuthRoutes(KEY, postgresModel), AuthRoutes.methods())
+  ]);
 
   try {
     await server.start();  
